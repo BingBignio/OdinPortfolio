@@ -1,0 +1,11 @@
+/* Primary styling */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%; /* easier to understand what font sizes are displayed when using rem */
+}
