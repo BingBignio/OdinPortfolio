@@ -3,9 +3,71 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: Helvetica, sans-serif;
+  font-family: "Heebo", sans-serif;
+  text-decoration: none;
+  color: rgb(233, 227, 227);
 }
 
 html {
   font-size: 62.5%; /* easier to understand what font sizes are displayed when using rem */
+}
+
+body {
+  background: black;
+}
+
+header {
+  display: flex;
+  background: rgb(26, 22, 32);
+  height: 5vh;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  font-size: 2rem;
+  list-style: none;
+  margin-left: 700px;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 80px;
+}
+
+#nav-menu li {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+a:hover {
+  color: rgb(255, 67, 124);
+}
+
+#logo {
+  display: flex;
+  margin-left: 10%;
+}
+
+#first-name {
+  color: rgb(233, 227, 227);
+  margin-right: 1rem;
+  font-family: "Sansita Swashed", cursive;
+}
+
+#last-name {
+  color: rgb(255, 67, 124);
+  font-family: "Sansita Swashed", cursive;
+}
+
+#background-image {
+  width: 100%;
+  opacity: 25%;
+}
+
+#icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 }
