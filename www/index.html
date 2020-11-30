@@ -6,7 +6,9 @@
     <title>Odin Branigan | GD Student</title>
     <meta name="description" content="My stuff and stuff about me">
     <link rel="icon" href="/images/animal_toy_stuffedanimal_doll_panda_bear_2747.ico">
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonts from Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -15,32 +17,35 @@
 </head>
 <body>
     <header>
-        <div id="logo">
-          <h1 id="first-name">Odin</h1> <h1 id="last-name">Branigan</h1>
-        </div>
         <nav>
-            <ul id="nav-menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+            <h1>Odin Branigan</h1>
+            <ul class="nav-menu">
+                <li><a data-page="Home" href="/">Home</a></li>
+                <li><a data-page="About" href="#">About</a></li>
+                <li><a data-page="Projects" href="#">Projects</a></li>
+                <li><a data-page="Contact" href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="introduction">
-            <!-- Background image with a brief and artsy summary here -->
-            <img id="background-image" src="/images/pexels-ben-mack-5326991.jpg" alt="fat seal">
-            <img id="icon" src="images/animal_toy_stuffedanimal_doll_cat_dog_2744.ico">
+        <section data-index="0" class="home">
+            <div class="intro-text">
+                <h2>Odin Branigan</h2>
+                <h3>Hahahaahaahaahahahahahahahahahaahaaha</h3>
+            </div>
+            <img class="bear-icon" src="/images/animal_toy_plushdollrat_animal_juguete_2745.ico" alt="Logo">
         </section>
 
-        <section>
-            <!-- About me stuff here -->
+        <section data-index="1" class="about">
+            <h2>About</h2>
         </section>
 
-        <section>
-            <!-- My work here -->
+        <section data-index="2" class="projects">
+            <h2>Projects</h2>
+        </section>
+        <section data-index="3" class="contact">
+            <h2>Contact</h2>
         </section>
     </main>
 
@@ -48,6 +53,6 @@
         <!-- Contact details and social media here -->
     </footer>
     <h2>butt</h2>
-    <img src="" alt="">
+    <script src="app.js"></script>
 </body>
 </html>

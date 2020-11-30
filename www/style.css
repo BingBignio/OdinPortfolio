@@ -5,69 +5,102 @@
   box-sizing: border-box;
   font-family: "Heebo", sans-serif;
   text-decoration: none;
-  color: rgb(233, 227, 227);
+  list-style: none;
+  color: rgb(22, 16, 39);
 }
 
 html {
   font-size: 62.5%; /* easier to understand what font sizes are displayed when using rem */
 }
 
-body {
-  background: black;
+header {
+  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.8);
+  position: sticky;
+  z-index: 10;
+  background-color: white;
+  top: 0px;
 }
 
-header {
+nav {
+  min-height: 3rem;
+  width: 85%;
+  margin: auto;
   display: flex;
-  background: rgb(26, 22, 32);
-  height: 5vh;
   align-items: center;
+  justify-content: space-between;
+}
+
+nav h1,
+nav ul {
+  font-size: 1.4rem;
+  flex: 1;
 }
 
 nav ul {
   display: flex;
-  font-size: 2rem;
-  list-style: none;
-  margin-left: 700px;
-  align-items: center;
+  justify-content: space-between;
 }
 
-nav ul li {
-  margin-right: 80px;
+nav ul li a {
+  padding: 0px 2vw;
 }
-
-#nav-menu li {
-  font-size: 1.6rem;
-  display: flex;
-  align-items: center;
-}
-
 a:hover {
-  color: rgb(255, 67, 124);
+  color: rgb(236, 95, 165);
 }
 
-#logo {
+section {
+  min-height: 75vh;
+  position: relative;
   display: flex;
-  margin-left: 10%;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
-#first-name {
-  color: rgb(233, 227, 227);
-  margin-right: 1rem;
-  font-family: "Sansita Swashed", cursive;
-}
-
-#last-name {
-  color: rgb(255, 67, 124);
-  font-family: "Sansita Swashed", cursive;
-}
-
-#background-image {
-  width: 100%;
-  opacity: 25%;
-}
-
-#icon {
+.intro-text {
   position: absolute;
-  top: 50%;
+  top: 35%;
+  left: 30%;
+  transform: translate(-35%, -30%);
+  text-align: right;
+}
+
+section h2 {
+  font-size: 3vw;
+  font-family: "Sansita Swashed", sans-serif;
+  color: rgb(95, 62, 62);
+}
+
+section h3 {
+  font-size: 1.5vw;
+  color: rgb(228, 220, 225);
+}
+
+.bear-icon {
+  position: absolute;
+  top: 35%;
   left: 50%;
+  transform: translate(-35%, -50%);
+  height: 14vw;
+}
+
+.home {
+  background-image: url("images/pigeon.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.about {
+  background-color: rgb(17, 26, 32);
+}
+
+.projects {
+  background-color: rgb(27, 15, 25);
+}
+
+.contact {
+  background-color: rgb(51, 38, 35);
 }
