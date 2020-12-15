@@ -6,7 +6,7 @@
   font-family: "Heebo", sans-serif;
   text-decoration: none;
   list-style: none;
-  color: rgb(228, 220, 225);
+  color: rgb(238, 238, 238);
 }
 
 html {
@@ -14,10 +14,9 @@ html {
 }
 
 header {
-  box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.8);
   position: sticky;
   z-index: 10;
-  background-color: rgb(228, 220, 225);
+  background-color: rgb(15, 15, 15);
   /*background-image: url("images/animal_toy_cute_doll_teddy_2742.ico");*/
   background-repeat: repeat-x;
   top: 0px;
@@ -25,7 +24,7 @@ header {
 
 h1 {
   font-family: "Sansita Swashed", sans-serif;
-  color: rgb(95, 62, 82);
+  color: rgb(238, 238, 238);
 }
 
 h2 {
@@ -34,16 +33,15 @@ h2 {
 }
 
 h3 {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 1.6rem;
 }
 
 /* Navigation menu */
 nav {
-  min-height: 3rem;
   width: 85%;
   margin: auto;
   display: flex;
@@ -54,6 +52,7 @@ nav {
 #logo {
   font-size: 1.6rem;
   flex: 2;
+  padding: 10px 0px;
 }
 
 .nav-menu {
@@ -61,33 +60,41 @@ nav {
   justify-content: space-between;
   font-size: 1.4rem;
   flex: 1;
+  padding: 10px 0px;
 }
 
 nav ul li a {
-  padding: 0px 2vw;
-  color: rgb(24, 10, 36);
+  padding: 10px 2vw;
+  color: rgb(238, 238, 238);
   font-weight: bold;
 }
 
-a:hover {
-  color: rgb(240, 126, 136);
-  box-shadow: 0px 5px 20px rgba(240, 126, 136, 0.3);
+nav ul li a:hover {
+  background: rgb(230, 90, 100);
+  color: rgb(238, 238, 238);
+  box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.3);
+}
+
+.active {
+  color: rgb(230, 90, 100);
 }
 
 /* Main content */
 section {
-  min-height: 75vh;
-  position: relative;
   display: flex;
   box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.3);
 }
 
-.home {
-  background-image: url("images/pigeon.jpg");
+#home {
+  position: absolute;
+  background-image: url("images/pigeon-background.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100%;
+  min-width: 100%;
+  top: 0;
 }
 
 #introduction {
@@ -98,12 +105,13 @@ section {
 }
 
 #name {
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: "Sansita Swashed", sans-serif;
-  color: rgb(240, 126, 136);
+  color: rgb(230, 90, 100);
   grid-column: 2/3;
   text-align: right;
   align-self: flex-end;
+  white-space: nowrap;
 }
 
 .bear-icon {
@@ -113,6 +121,7 @@ section {
   justify-self: center;
   height: 100%;
   object-fit: cover;
+  min-height: 300px;
 }
 
 .summary {
@@ -122,16 +131,34 @@ section {
 
 .summary h3 {
   padding-bottom: 1rem;
+  white-space: nowrap;
 }
 
 .about {
   background: radial-gradient(#35353a, #1c1d22);
+  min-height: 1000px;
 }
 
 .projects {
-  background-color: rgb(27, 15, 25);
+  background: radial-gradient(#35353a, #1c1d22);
+  min-height: 1000px;
 }
 
 .contact {
-  background-color: rgb(51, 38, 35);
+  background: radial-gradient(#35353a, #1c1d22);
+  min-height: 1000px;
+}
+
+/* For Mobile */
+@media screen and (max-width: 540px) {
+  .summary,
+  .summary h3 {
+    grid-column: 3/4;
+    text-align: center;
+    white-space: normal;
+  }
+  #name {
+    grid-column: 3/4;
+    justify-self: center;
+  }
 }
