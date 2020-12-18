@@ -14,11 +14,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet">
 
+    <!-- allows me to imbed free vector icons from this website -->
+    <script src="https://kit.fontawesome.com/3fe516f9eb.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
         <nav>
             <h1 id="logo">Odin Branigan</h1>
+            <div class="menu-button">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
             <ul class="nav-menu">
                 <li><a data-page="Home" href="/">Home</a></li>
                 <li><a data-page="About" href="about.html">About</a></li>
@@ -29,8 +37,57 @@
     </header>
 
     <main>
-        <section class="projects">
-            <h2>Contact</h2>
+        <section class="contact">
+            <div class="content">
+                <h2>Contact Us</h2>
+                <br>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt quam, eligendi non sint placeat veritatis iusto. Eius obcaecati cum suscipit modi excepturi ad adipisci libero!</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-information">
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-phone"></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>07123 45678</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-envelope"></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>odinbranigan@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>Cranborne House,<br>St. Pauls,<br>Bournemouth,<br>BH8 8HF</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <h3>Send a Message</h3>
+                        <div class="input-field">
+                            <input type="text" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="input-field">
+                            <input type="text" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="input-field">
+                            <textarea required="required"></textarea>
+                            <span>Your Message...</span>
+                        </div>
+                        <div class="input-field">
+                            <input class="submitBtn" type="submit" name="Send" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
         </section>
     <script src="app.js"></script>
 </body>

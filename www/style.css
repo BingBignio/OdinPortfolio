@@ -9,6 +9,10 @@
   color: rgb(238, 238, 238);
 }
 
+*:focus {
+  outline: none;
+}
+
 html {
   font-size: 62.5%; /* easier to understand what font sizes are displayed when using rem */
 }
@@ -17,7 +21,6 @@ header {
   position: sticky;
   z-index: 10;
   background-color: rgb(15, 15, 15);
-  /*background-image: url("images/animal_toy_cute_doll_teddy_2742.ico");*/
   background-repeat: repeat-x;
   top: 0px;
 }
@@ -79,6 +82,44 @@ nav ul li a:hover {
   color: rgb(230, 90, 100);
 }
 
+/* For Mobile */
+@media screen and (max-width: 540px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+  }
+
+  .menu-button {
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  .nav-menu {
+    position: fixed;
+    background: rgb(15, 15, 15);
+    height: 100vh;
+    width: 500px;
+    top: 0;
+    left: 0;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+
+    /* creates a circle mask top right ready to show mobile navigation menu */
+    clip-path: circle(0px at 90% -10%);
+    /* adds further support for different browsers to be able to use mask feature */
+    -webkit-clip-path: circle(0px at 90% -10%);
+    transition: all 0.7s ease-out;
+  }
+
+  .nav-menu.open {
+    clip-path: circle(1200px at 90% -10%);
+    -webkit-clip-path: circle(1200px at 90% -10%);
+  }
+}
+
 /* Main content */
 section {
   display: flex;
@@ -114,7 +155,7 @@ section {
   white-space: nowrap;
 }
 
-.bear-icon {
+.gorilla {
   grid-row: 2/3;
   grid-column: 3/4;
   align-self: center;
@@ -134,21 +175,6 @@ section {
   white-space: nowrap;
 }
 
-.about {
-  background: radial-gradient(#35353a, #1c1d22);
-  min-height: 1000px;
-}
-
-.projects {
-  background: radial-gradient(#35353a, #1c1d22);
-  min-height: 1000px;
-}
-
-.contact {
-  background: radial-gradient(#35353a, #1c1d22);
-  min-height: 1000px;
-}
-
 /* For Mobile */
 @media screen and (max-width: 540px) {
   .summary,
@@ -161,4 +187,241 @@ section {
     grid-column: 3/4;
     justify-self: center;
   }
+}
+
+.gallery-container {
+  width: 70%;
+  margin: 10vh auto;
+}
+
+#model-gallery {
+  display: flex;
+  width: 100%;
+  height: 360px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+model-viewer {
+  height: 100%;
+  width: 100%;
+  align-self: center;
+  box-shadow: 0 10px 5px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  border: 1px solid white;
+  background: radial-gradient(#1e2029, #0f101a);
+}
+
+@media screen and (max-width: 960px) {
+  #model-gallery {
+    flex-direction: column;
+    height: 840px;
+  }
+}
+
+.about {
+  background: radial-gradient(#35353a, #1c1d22);
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  top: 0;
+}
+
+.projects {
+  background: radial-gradient(#35353a, #1c1d22);
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  top: 0;
+}
+
+.projects h2 {
+  left: 20%;
+}
+
+.contact {
+  background: radial-gradient(#35353a, #1c1d22);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  min-width: 100%;
+  top: 0;
+}
+
+.content {
+  margin: 5vh;
+  text-align: center;
+  width: 60%;
+}
+
+.contact-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-information {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.box {
+  display: flex;
+  position: relative;
+  padding: 30px 0px;
+}
+
+.icon {
+  display: flex;
+  min-width: 60px;
+  height: 60px;
+  background: rgb(230, 90, 100);
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 2rem;
+  margin-right: 16px;
+}
+
+.text h3 {
+  color: rgb(230, 90, 100);
+}
+
+.contact-form {
+  background: rgb(223, 223, 223);
+  padding: 20px;
+  width: 30%;
+}
+
+.contact-form h3 {
+  color: rgb(15, 15, 15);
+}
+
+form span {
+  position: absolute;
+  left: 0;
+  font-size: 1.6rem;
+  color: rgb(122, 122, 122);
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+form input:focus ~ span,
+form input:valid ~ span,
+form textarea:focus ~ span,
+form textarea:valid ~ span {
+  color: rgb(230, 90, 100);
+  transform: translateY(-24px);
+  font-size: 1.4rem;
+  outline: none;
+}
+
+.input-field {
+  position: relative;
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.input-field input,
+.input-field textarea {
+  width: 100%;
+  padding: 10px 0 0 5px;
+  background: transparent;
+  color: rgb(15, 15, 15);
+  font-size: 1.4rem;
+  border: none;
+  border-bottom: 2px solid black;
+  resize: none;
+}
+
+.input-field textarea {
+  height: 200px;
+}
+
+input[type="submit"] {
+  background: rgb(230, 90, 100);
+  width: 50%;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  border: none;
+  margin: auto;
+}
+
+input[type="submit"]:hover {
+  background: rgb(187, 72, 80);
+}
+
+/* For Mobile */
+@media screen and (max-width: 960px) {
+  .contact-container {
+    flex-direction: column;
+    margin-bottom: 10vh;
+  }
+
+  .contact-form {
+    width: 50%;
+  }
+
+  .content {
+    position: relative;
+    margin: 15vh 5vh 5vh 5vh;
+    width: 80%;
+  }
+}
+
+footer {
+  display: flex;
+  bottom: 10px;
+  justify-content: center;
+}
+
+footer i {
+  font-size: 3rem;
+}
+
+.about .container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about-intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 10vh;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-content img {
+  width: 400px;
+}
+
+footer {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 24px;
+  bottom: 0;
+  justify-items: center;
+}
+
+.footer-content {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: rgb(160, 160, 160);
+  font-size: 1.2rem;
 }

@@ -23,6 +23,11 @@
     <header>
         <nav>
             <h1 id="logo">Odin Branigan</h1>
+            <div class="menu-button">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
             <ul class="nav-menu">
                 <li><a data-page="Home" href="/">Home</a></li>
                 <li><a data-page="About" href="about.html">About</a></li>
@@ -34,12 +39,22 @@
 
     <main>
         <section class="projects">
-            <h2>Projects</h2>
-            <div>
-                <model-viewer src="models/Simple_Wooden_Dining_Chair.glb" alt="A 3D model of an astronaut" auto-rotate camera-controls></model-viewer>
-                3D chair. Come take a seat in our elegant 3D chair. Made from Indian oak with a glossy finish, this chair will make any website stand out, or should I say; sit down!
+            <div class="gallery-container">
+                <h2>Projects</h2>
+                <div id="model-gallery">
+                    <model-viewer src="models/Simple_Wooden_Dining_Chair.glb" alt="A 3D model of a chair" camera-controls></model-viewer>
+                    <model-viewer src="models/hand.glb" alt="A 3D model of a fat hand" camera-controls></model-viewer>
+                    <model-viewer src="models/head.glb" alt="A 3D model of a head" camera-controls></model-viewer>
+                </div>
             </div>
         </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            odinbranigan@gmail.com      |       07123 45678
+        </div>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>
