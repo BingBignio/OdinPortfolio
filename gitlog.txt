@@ -1,0 +1,83 @@
+commit d0d9b44c0174bbb3a21a0100d055ec2588b5f5fc
+Author: Odin Branigan <odinbranigan@gmail.com>
+Date:   Fri Dec 18 06:13:56 2020 +0000
+
+    contact form, consistent footer, and other additional content to all pages
+
+commit 1f4a499e9fd4ba3a1d2638323f0b6d11ec34063e
+Merge: a79eb93 a1b21df
+Author: BingBignio <62301822+BingBignio@users.noreply.github.com>
+Date:   Tue Dec 15 19:34:35 2020 +0000
+
+    Merge pull request #2 from BingBignio/feature/add-model-viewer
+    
+    added model viewer and some compatibility with mobile resolutions
+
+commit a1b21dfb7c7e3175de2d6c7924f9defa1c55cd7e
+Author: Odin Branigan <odinbranigan@gmail.com>
+Date:   Tue Dec 15 19:30:20 2020 +0000
+
+    added model viewer and some compatibility with mobile resolutions
+
+commit a79eb930ad8f0bef9d259c6f3f53e4e2758027f0
+Merge: 48babba 966a47b
+Author: BingBignio <62301822+BingBignio@users.noreply.github.com>
+Date:   Sun Dec 13 16:54:36 2020 +0000
+
+    Merge pull request #1 from BingBignio/feature/add-content-with-pages
+    
+    add content to pages
+
+commit 966a47b00c99b1b188cfc8bcf7c8fbb2c03d8b37
+Author: Odin Branigan <odinbranigan@gmail.com>
+Date:   Sun Dec 13 16:50:26 2020 +0000
+
+    add content to pages
+
+commit 48babbadd18c0cc2cfd9847d805a8dbd1dcf8b25
+Author: Odin Branigan <odinbranigan@gmail.com>
+Date:   Mon Nov 30 17:54:06 2020 +0000
+
+    hello
+
+commit b3cd2e189afaf4ae2f92164024a3b31fb9f56f0f
+Author: Odin Branigan <odinbranigan@gmail.com>
+Date:   Mon Nov 30 17:45:46 2020 +0000
+
+    added things
+
+commit f633fd7e0349b6fe3ea0dcbeca9cfdad08d9afee
+Author: Odin Branigan <odinbranigan@gmail.com>
+Date:   Sat Nov 28 08:41:20 2020 +0000
+
+    further developed home page in html and css file
+
+commit bcbe1846015ab0df2c12e3eda2285538637bee0f
+Author: Odin Branigan <odinbranigan@gmail.com>
+Date:   Fri Nov 27 10:30:12 2020 +0000
+
+    created a general structure inside the html file and linked a css stylesheet
+
+commit 3a0fbbe15c18ab8ecf939568cd98b63cac7d0b80
+Author: Odin Branigan <odinbranigan@gmail.com>
+Date:   Wed Nov 25 12:43:25 2020 +0000
+
+    begun homepage, created new folder for downloads
+
+commit 113d9f8736353732c8ac2bcc6108522d61c26a3c
+Author: Your Name <you@example.com>
+Date:   Wed Nov 25 10:51:04 2020 +0000
+
+    folder renaming
+
+commit b110aeccdcdb241396d91dfdbed01345b8f42b6c
+Author: Your Name <you@example.com>
+Date:   Sun Nov 22 09:35:24 2020 +0000
+
+    beginning to set up directories
+
+commit 64448f14a60e29f218436503721040bbb61bba1e
+Author: BingBignio <62301822+BingBignio@users.noreply.github.com>
+Date:   Sun Nov 22 09:04:08 2020 +0000
+
+    Initial commit
